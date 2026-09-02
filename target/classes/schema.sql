@@ -42,3 +42,8 @@ CREATE TABLE IF NOT EXISTS announcement (
 CREATE TABLE IF NOT EXISTS parent_student (
                                               parent_id INTEGER, student_id INTEGER
 );
+CREATE TABLE IF NOT EXISTS teacher_student (
+    teacher_id INTEGER,
+    student_id INTEGER,
+    PRIMARY KEY (teacher_id, student_id)
+);
